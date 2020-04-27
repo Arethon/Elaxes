@@ -19,8 +19,7 @@ namespace Elaxes.Controllers
             new Customer(){Name="Maciek",Id=2}
             };
 
-            var viewModel = new RandomMovieViewModel { Customers = customers, Movies = movies };
-            return View(viewModel);
+            return View(customers);
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Elaxes.Controllers
 
             var selectedMovie = movies[Id];
 
-           return PartialView(selectedMovie);
+           return View(selectedMovie);
         }
 
 
