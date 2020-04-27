@@ -1,0 +1,21 @@
+﻿@model Elaxes.ViewModels.RandomMovieViewModel
+
+
+@if (Model.Customers.Count > 0)
+{
+
+    <ul>
+        @foreach (var customer in Model.Customers)
+        {
+            <li>
+                @customer.Name;
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <h2> No customers in list</h2>
+}
+
+

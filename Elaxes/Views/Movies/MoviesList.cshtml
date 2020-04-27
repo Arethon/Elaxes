@@ -1,0 +1,19 @@
+﻿@model Elaxes.ViewModels.RandomMovieViewModel
+
+
+@if (Model.Movies.Count > 0)
+{
+
+    <ul>
+        @foreach (var movie in Model.Movies)
+        {
+            <li>@Html.ActionLink(movie.Name, "MovieDetailed", "Movies",  new { Id = movie.Id },null)</li>
+        }
+
+    </ul>
+}
+else
+{
+    <h2> No movies in list</h2>
+}
+
